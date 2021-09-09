@@ -1,3 +1,4 @@
+#testcomment
 resource "azurerm_virtual_network" "myvnet" {
     name = "myvnet"
     location = azurerm_resource_group.myrglab.location
