@@ -15,3 +15,8 @@ steps:
     SourceFolder: '$(System.DefaultWorkingDirectory)'
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
